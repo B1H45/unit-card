@@ -1,0 +1,59 @@
+:root {
+    --c-background: #c5c5c5;
+    --c-keyword: #292929;
+}
+
+/* App */
+
+.card-section {
+    background-color: var(--c-background);
+    height: 100vh;
+    width: 100vw;
+    padding: 150px;
+    display: flex;
+}
+
+/* Card */
+
+.card {
+    border: 1px #ff0000 solid;
+    height: fit-content;
+    position: relative;
+}
+
+.card-img {
+    width: 600px;
+    border-radius: 7px;
+    aspect-ratio: 199/140;
+}
+
+/* Custom rendered card elements */
+
+.card__keywords {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 13.85% 3.5%;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.keyword-graphic {
+    /* display: none; */
+    font-family: "Pattanakarn", sans-serif;
+    color: var(--c-keyword);
+    /* color: red; */
+    /* background-color: #fbf9f7; */
+    font-variant-caps: small-caps;
+    letter-spacing: 0.4px;
+    font-size: 17px;
+    --outline-w: 6px;
+    --outline-h: 2px;
+    padding: var(--outline-h) var(--outline-w);
+    margin: calc(-1 * var(--outline-h)) calc(-1 * var(--outline-w));
+    transition: filter 150ms ease;
+}
+.keyword-graphic:hover {
+    filter: brightness(300%);
+}
